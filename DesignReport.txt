@@ -1,0 +1,16 @@
+>> A brief description of the overall design of the application system. 
+>> The description should focus mostly on the classes required to deliver
+>  the major functions of your application, not on secondary or utility classes
+>> We shall clearly describe the responsibilty and interface of each class and 
+>  the relationships among them
+
+
+Our application design uses a main menu, command line interface to access the other required
+aspects of the project. The main menu guides the user to their desired entry point through a 
+number of print statements. Each aspect of the application design calls another python file 
+which all only use sets of functions.
+
+Responsibility and Interface of each file;
+Vehicle.py (for new vehicle registration): this component asks the user to enter a sin then
+prompts them to register the person if their sin has not been registered before. After this
+the user must register a vehicle, along the way being forced to enter only pre
