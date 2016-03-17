@@ -13,4 +13,6 @@ which all only use sets of functions.
 Responsibility and Interface of each file;
 Vehicle.py (for new vehicle registration): this component asks the user to enter a sin then
 prompts them to register the person if their sin has not been registered before. After this
-the user must register a vehicle, along the way being forced to enter only pre
+the user must register a vehicle, along the being sure to only register people for cars exisitng in tge database.
+
+Violation.py (for violation record): this violation component records all details of the ticket table, being sure to only accept entries for valid people.
