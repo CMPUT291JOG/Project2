@@ -11,13 +11,12 @@ number of print statements. Each aspect of the application design calls another 
 which all only use sets of functions.
 
 Responsibility and Interface of each file;
-Vehicle.py (for new vehicle registration): this component asks the user to enter a sin then
+For new vehicle registration, the goal is to register a vehicle. This program asks the user to enter a sin then
 prompts them to register the person if their sin has not been registered before. After this
 the user must register a vehicle, along the being sure to only register people for cars exisitng in tge database.
 
-Violation.py (for violation record): this violation component records all details of the ticket table, being sure to only accept entries for valid people.
+For violation record, the goal is to save the violation record to database.  This violation component records all details of the ticket table, being sure to only accept entries for valid people.
 
-Desription for Licence Registration design
 For licence registration, the goal is to register a driver licence.
 The program begins by SIN input.
 Since SIN is unqiue, the program will use that to check whether there is a driver licence registered with the specified SIN.
@@ -26,7 +25,6 @@ Otherwise, the program checks whether the person is in the database by SIN.
 If the person is not in database, the program will add a new person and continue with driver licence registration.
 If the person is in database, the program will just add a driver licence to the existing person's record.
 
-Desription for Auto Transaction design
 For auto transaction, the goal is to allows an officer to enter infomaion with respect to the details of
 seller, buyer, date, and price to complete the transaction.
 First, the program prompts for buyer ID and check whether the buyer exist in the database.
