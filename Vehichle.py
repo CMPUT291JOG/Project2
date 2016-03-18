@@ -1,2 +1,0 @@
-# New Vehichle Registration
-# Gemma
