@@ -33,16 +33,16 @@ def main():
 		
 		program = input("Choose Program Number: \n\t")
 		if program == "1":
-			# Call fxn to create db and populate it
+			# Call fcn to create db and populate it
 			createDB()
 		elif program == "2":
-			# Call key record retreval fxn
+			# Call key record retrieve fcn
 			print(2)
 		elif program == "3":
-			# Call data retreaval record fxn 
+			# Call data retrieve record fcn 
 			print(3)
 		elif program == "4":
-			# Call range record retreaval fxn
+			# Call range record retrieve fn
 			print(4)
 		elif program == "5":
 			# Call destroy db
@@ -70,7 +70,7 @@ def createDB():
 	except:
 		print("Error creating file.")
 		return
-	random.seed(SEED)b
+	random.seed(SEED)
 
 	for index in range(DB_SIZE):
 		krng = 64 + get_random()
@@ -88,7 +88,7 @@ def createDB():
 		value = value.encode(encoding='UTF-8')
 		database.put(key, value);
 
-	## retriving all values
+	# retriving all values
 	#cur = database.cursor()
 	#iter = cur.first()
 	#while iter:
@@ -97,10 +97,11 @@ def createDB():
 		#iter = cur.next()
 		#print("------------------------")
 	try:
+		# confirm empty database, uncomment below
+		#database.truncate()		
 		database.close()
 	except Exception as e:
 		print (e)
 		return
-
 
 main()
