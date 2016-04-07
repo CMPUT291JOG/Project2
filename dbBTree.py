@@ -1,6 +1,6 @@
 # CMPUT 291 - Project 2
 # Due: April 7, 2016
-# Group members: Gemma M., Omar Almokdad, Waiyi Low
+# Group members: Gemma Marcinkoski, Omar Almokdad, Waiyi Low
 #
 # This program has several options to allow user to 
 # create or delete database, retrieve records, or exit program

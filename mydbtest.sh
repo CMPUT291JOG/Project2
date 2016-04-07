@@ -5,7 +5,7 @@ HASH="hash"
 INDEX="indexfile"
 
 if [ "$#" -ne 1 ]; then
-    echo "Program only takes 1 argument: "
+    echo "Program takes 1 argument: "
     echo "btree, hash, or indexfile"
 
 elif [ "$1" == $BTREE ]; then
